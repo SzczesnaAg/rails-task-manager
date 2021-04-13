@@ -1,4 +1,4 @@
-<h1>New task</h1>
+<h2>Edit task</h2>
 
 <div>
   <%= form_for(@task) do |f| %>
@@ -18,6 +18,10 @@
     <%= f.submit %>
     </div>
   <% end %>
+</div>
+
+<div>
+  <p>Is taks completed: <%= @task.completed %></p>
 </div>
 
 <%= link_to "Back to the list", tasks_path %>

@@ -2,5 +2,16 @@
 
 <p> <%= @task.details %> </p>
 
+<div>
+  <p>Is taks completed: <%= @task.completed %></p>
+</div>
 
-<%= link_to "Back to the list", tasks_path %>
+<div>
+<button style="background-color: lightblue">
+  <%= link_to "Edit task", task_edit_path %>
+</button>
+</div>
+
+<div style="margin: 12px">
+  <%= link_to "Back to the list", tasks_path %>
+</div>
